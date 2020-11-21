@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif ;
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 100%;
+}
+.wrapper h1{
+    padding: 40px 20px;
+}
+.wrapper .cards{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2.6rem;
+}
+.wrapper .cards .card{
+
+    max-width: 300px;
+    height: 216px;
+    background: #fff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.34);
+    margin: 30px 10px;
+    /* padding: 20px 25px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+.wrapper .cards .card:last-child{
+    width: 280px;
+}
+.wrapper .cards .card:hover{
+    height: 320px;
+}
+.card .img{
+    position: relative;
+    width: 190px;
+    height: 190px;
+    top: -70px;
+    border-radius: 150px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.34);
+}
+.card .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 150px;
+}
+.card .text{
+    position: relative;
+    margin-top: -100px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+
+}
+.card .text h2{
+    padding: 0.6rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid gray;
+
+}
+.card .text p{
+    padding: 0.3rem;
+    color: gray;
+}
+.card .text i{
+    font-size: 28px;
+    margin: 5px;
+    padding: 0.5rem 0.6rem;
+    border-radius: 55px;
+}
+.card .text i:hover{
+    background: rgb(56, 55, 55);
+    color: #fff;
+   
+}
+
+.wrapper .cards .card:hover .text{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -30px;
+    transition-delay: 0.3s;
+
+}
+.wrapper .cards .card:hover .bg{
+    background: none;
+}
+.bg{
+    width: 100%;
+    background-color: rgb(253, 123, 123);
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-text{
+    font-size: 20px;
+    padding-bottom: 0.6rem;
+}
+ 
+@media(max-width:596px){
+    .wrapper .cards .card{
+        margin-top: 10%;
+    }
+
+}
+@media(max-width:396px){
+    .wrapper .cards .card{
+        margin: 0;
+        margin-top:40%;
+    }
+    .wrapper{
+        margin-top: 40%;
+    }
+
+    .wrapper .cards396{
+        padding: 1rem;
+    }
+    .wrapper .cards .card{
+        width: 90%;
+    }
+   
+    
+}

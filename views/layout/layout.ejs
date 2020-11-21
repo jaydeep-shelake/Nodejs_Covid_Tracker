@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelathCare</title>
+    <link rel="shortcut icon" href="img/mask.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/corona.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <% if(page_name==='tracker'){ %><link rel="stylesheet" href="css/tracker.css"><% } %>
+    <% if(page_name==='about'){ %><link rel="stylesheet" href="css/about.css"><% } %>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <%- body %> 
+    <%- include('../partials/footer.ejs') %>
+
+    <script src="/js/header.js"></script>
+    <% if(page_name==='home'){ %> <script src="./js/index.js"></script><% } %>
+    <% if(page_name==='tracker'){ %><script src="js/tracker.js"></script> <% } %>
+       
+</body>
+</html>

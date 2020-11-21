@@ -1,0 +1,40 @@
+.comment-sec{
+    width: 100%;
+    margin-top: 10%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.comment-sec h1{
+    padding: 2rem 0;
+}
+.height{
+    height: 600px;
+    overflow-y: auto;
+}
+.indi-comment{
+    padding: 1rem;
+    min-width: 260px;
+    width: auto;
+    border-bottom: 1px solid gray;
+}
+.userName{
+    font-size: 22px;
+    color: rgb(251, 107, 107);
+    text-transform: capitalize;
+    padding: 0.6rem 0;
+}
+.cmmts{
+    color: rgb(87, 85, 85);
+}
+@media(max-width:380px){
+    .height{
+        width: 100%;
+    }
+    .indi-comment{
+        width: 90%;
+    }
+
+}

@@ -1,0 +1,224 @@
+
+@media(max-width:930px){
+    .preCard{
+        flex-wrap: wrap;
+    }
+    .infoSection{
+     height: auto;
+    }
+    /* .infocards{
+        flex-wrap: wrap;
+    }
+    .infocards .card.three{
+     margin-top: 60px;
+    } */
+}
+
+@media only screen and (max-width:600px){
+    .nav{
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px 0;
+        height: auto;
+        overflow-y: hidden;
+        width: 100%;
+        text-align: center;
+    }
+    .nav h4{
+        font-size: 6vw;
+        margin-top: 10px;
+        margin-bottom: 14px;
+        font-weight: 350;
+        margin-left: 0;
+    }
+    .nav .links a{
+        
+        font-size: 16px;
+        font-weight: 600;
+        padding: 10px;
+    }
+    .landing{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 600px;
+        margin: 4% auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .landingText h1{
+        font-size: 6vw;
+        margin: 0 !important;
+    }
+    .landingText h3{
+        font-size: 16px;
+    }
+    .landingText .btn{
+    margin: 5% auto;
+    }
+    .landingText .btn a{
+        font-size: 3vw;
+
+    }
+    .landingimg img{
+    
+        width: 52vw;
+        margin-bottom: 20px
+        
+    }
+    .landiwngimg{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center ;
+        justify-content: center;
+        margin:auto;
+    }
+    .about{
+        height:auto;
+        padding:0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .aboutText{
+        padding: 0 20px;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .aboutText h1{
+        /* left: 40px; */
+        font-size: 5vw;
+    }
+    .aboutText img{
+        width: 35vw;
+        top: 10px;
+        left: 100px;
+    }
+    .aboutList{
+          width: 95%;
+    }
+    ol li{
+        font-size: 26px;
+     }
+    li p{
+        font-size: 14px;
+    }
+    .infoSection{
+        height: auto;
+        margin-top: 30%;
+    }
+    .infoHeader{
+        text-align: center;
+        margin: 40px 0;
+
+    }
+    .infoHeader h1{
+        font-size: 1.6rem;
+    }
+    .infocards{
+        display: flex;
+        flex-direction: column;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .infocards .card{
+        margin-bottom: 60px;
+        width: 270px;
+        height: 370px;
+    }
+    .infocards .card.three{
+        margin-top: 20px;
+       }
+    .cardContent .cardBtn img{
+        width: 65px;
+        height: 65px;
+        border-radius:50%;
+    }
+    .infocards .three .cardimg {
+        top: -50px;
+        right: -30px;
+    }
+    .banner{
+        height: auto;
+        flex-direction: column;
+        padding: 50px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .banner h1{
+        font-size: 6vw;
+    }
+    .innerText{
+       font-size: 4vw !important;
+    }
+    .bannerimg img{
+        width: 70vw;
+    }
+    .footer{
+        text-align: center;
+        
+    }
+    .iconsText h4{
+        margin-top: 4%;
+    }
+    .bnnerText #img2{
+        width: 18vw;
+        height: 24px;
+    }
+    .feedback h2{
+        text-align: center;
+    }
+}  
+
+@media(max-width:435px){
+    form{
+        width: 80%;
+    }
+    .landingimg {
+        width: auto;
+    }
+    .preCard .card{
+        width: 90%;
+    }
+    
+    .preCard .card .text p{
+        font-size: 14px;
+    }
+    .links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 0;
+        transition: max-height 0.5s ease-in;
+        
+    }
+    
+    .height{
+       max-height:300px;
+        
+    }
+    
+    .nav .links a{
+        display: none;
+    }
+    .height a{
+        display: flex !important;
+        
+    }
+    .burger{
+        display: block;
+    }
+    
+
+    
+}

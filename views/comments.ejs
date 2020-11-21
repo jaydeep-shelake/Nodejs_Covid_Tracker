@@ -1,0 +1,13 @@
+ <link rel="stylesheet" href="css/comments.css">
+ <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+<div class="comment-sec">
+    <h1>Comments</h1>
+    <div class="height"><% feedbackComment.slice().reverse().forEach((feed)=>{ %>
+        <% if(!feed.comment==''){ %>
+          <div class="indi-comment">
+        <div class="userName"><i class="fas fa-user"></i> <%= feed.name %></div>
+        <div class="cmmts"><%= feed.comment %></div>
+      </div>
+        <%}%>
+      <%})%></div>
+</div>

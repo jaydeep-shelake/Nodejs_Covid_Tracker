@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@800&family=Do+Hyeon&family=Nunito+Sans:wght@200&family=Teko:wght@600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: #ffffff;
+    height: 100vh;
+    
+}
+.wrapper{
+    margin-top: 10%;
+}
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color:gray;
+    font-size: 38px;
+    font-family:  'Do Hyeon', sans-serif;
+    margin-top: 20%;
+}
+p{
+    text-align: center;
+    font-family:'Do Hyeon', sans-serif;
+    color: gray;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.input{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 12px;
+}
+#searchBar{
+    width: 70%;
+    margin: 0 1rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 8px;
+    box-shadow: 8px 8px 18px rgba(135, 132, 132, 0.241) ;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+     color: gray;
+     font-size: 16px;
+    font-weight: 700;
+    padding-left: 5%;
+    
+}
+#searchBtn{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 15%;
+    background: #ffffff;
+    color: rgb(233, 33, 66);
+    border: none;
+    box-shadow: 1px 1px 12px rgb(157, 153, 153,0.467);
+    border-radius: 4px;
+    font-weight: bold;
+    
+}
+#searchBtn:hover{
+    background:rgb(233, 33, 66);
+    color: #ffffff;
+}
+input::placeholder{
+    color:rgb(157, 153, 153);
+    font-weight: 600;
+   
+}
+#country{
+    width: 300px;
+    margin: auto;
+    height: 100px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 8px 8px 18px rgba(135, 132, 132, 0.241);
+    border-radius: 4px;
+}
+#country h2{
+    color: rgb(245, 21, 59); background: rgba(245, 61, 92, 0.439); padding: 5px; border-radius: 4px;
+}
+
+#flag{
+    width: 80px;
+    height: 50px;
+    margin-left: 5%;
+}
+#flag img{
+    width: 90%;
+    height: 100%;
+}
+.menu{
+    position: absolute;
+    top: 2%;
+    right: 5%;
+    color: rgb(158, 158, 158);
+    font-family:'Do Hyeon', sans-serif ;
+    font-size: 22px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.box{
+   width: 260px;
+   height: 170px;
+   /* background: rgb(43, 43, 43); */
+   /* box-shadow: 1px 1px 1px rgb(0,0,0,0.42); */
+   margin: 10px;
+   border-radius: 6px;
+}
+.head,.head2,.head3,.head-1,.head-2,.head-3{
+height: 20%;
+text-align: center;
+color:red;
+font-size: 25px;
+font-weight: 600;
+font-family: 'Do Hyeon', sans-serif;
+}
+.head-1{
+    color:rgb(5, 194, 5);
+}
+.head-2{
+    color:rgb(235, 9, 46);;
+}
+.head-3{
+    color:purple;
+}
+.head2{
+    color:gray;
+}
+.head3{
+    color: blue;
+}
+#totalCase,#actveCase,#totalDeath,#recoverd,#critical,#tests{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    font-family: 'Teko', sans-serif;
+    color: red;
+    font-weight: 700;
+}
+#actveCase{
+    color:  blue;
+}
+#totalDeath{
+    color: gray;
+}
+#recoverd{
+    color:rgb(5, 194, 5);
+}
+#critical{
+ color: rgb(235, 9, 46);
+}
+#tests{
+    color: purple;
+}
+.line, .line2, .line3{
+    width: 100%;
+    height: 4.9%;
+    background:red;
+}
+.line2{
+    background: rgb(140, 139, 139);
+}
+.line3{
+    background: blue;
+}
+.line-1,.line-2,.line-3{
+    width: 100%;
+    height: 4.9%;
+    /* border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; */
+    background:rgb(5, 194, 5);
+}
+.line-2{
+    background:rgb(235, 9, 46);
+}
+.line-3{
+    background:purple;
+}
+.covid1{
+    position: absolute;
+    top: 25%;
+    right: 7%;
+    width: 55px;
+    
+}
+.covid2{
+    position: absolute;
+    top: 35%;
+    left: 14%;
+    width: 55px;
+}
+.covid3{
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    width: 55px;
+}
+.covid4{
+    position: absolute;
+    top: 70%;
+    left: 3%;
+    width: 55px;
+}
+.covid5{
+    position: absolute;
+    top: 4%;
+    left: 20%;
+    width: 55px;
+}
+.covid6{
+    position: absolute;
+    top: 4%;
+    right: 20%;
+    width: 55px;
+}
+.covid7{
+    position: absolute;
+    top: 4%;
+    right: 20%;
+    width: 55px;
+}
+.covid1,.covid2,.covid3,.covid4,.covid5,.covid6,.covid7{
+    animation: bounce 0.6s linear 20;
+}
+table{
+    margin-top: 10%;
+    margin-bottom: 15% !important;
+    display: none;
+}
+
+@media only screen and (max-width:735px){
+    .info{
+        flex-direction: column;
+    }
+    .covid1,.covid2,.covid3,.covid4,.covid5,.covid6,.covid7{
+        display: none;
+    }
+    .input{
+        width: 90%;
+        flex-direction: column;
+    }
+    .input button{
+        margin-top: 10%;
+        
+    }
+    #searchBtn{
+        width: 100px;
+    }
+    .wrapper{
+        margin-top: 20%;
+    }
+}
+@media only screen and (max-width:455px){
+    .wrapper{
+        margin-top: 35%;
+    }
+}
+
+@media only screen and (max-width:395px){
+    .wrapper{
+        margin-top: 40%;
+    }
+    #country{
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+    }
+    #flag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #name{
+        width: 100%;
+        text-align: center;
+    }
+    .box{
+        width: 90%;
+    }
+    #searchBtn{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .input{
+        width: 100%;
+    }
+}
