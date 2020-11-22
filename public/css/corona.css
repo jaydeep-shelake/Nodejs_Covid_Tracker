@@ -241,13 +241,10 @@ border-radius: 44%;
 }
 .bnnerText a img{
     width: 18vw;
+    height: 75px;
     border-radius: 22px;
     padding: 5px;
     margin-right: 20px;
-}
-.bnnerText #img2{
-    width: 18vw;
-    height: 75px;
 }
 
 .bannerimg img{

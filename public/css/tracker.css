@@ -244,10 +244,24 @@ font-family: 'Do Hyeon', sans-serif;
 .covid1,.covid2,.covid3,.covid4,.covid5,.covid6,.covid7{
     animation: bounce 0.6s linear 20;
 }
+.container{
+    margin: auto;
+}
 table{
+    
     margin-top: 10%;
     margin-bottom: 15% !important;
-    display: none;
+    display: none ;
+    width: 100%;
+    
+}
+.load{
+    font-size:20px;
+    font-weight: 700;
+    padding: 0.6rem;
+}
+#date{
+    padding: 1rem 0;
 }
 
 @media only screen and (max-width:735px){
@@ -275,6 +289,9 @@ table{
 @media only screen and (max-width:455px){
     .wrapper{
         margin-top: 35%;
+    }
+    table{
+        width: 100%;
     }
 }
 

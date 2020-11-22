@@ -10,8 +10,8 @@
 .comment-sec h1{
     padding: 2rem 0;
 }
-.height{
-    height: 600px;
+.height2{
+    height: 800px;
     overflow-y: auto;
 }
 .indi-comment{
@@ -30,11 +30,14 @@
     color: rgb(87, 85, 85);
 }
 @media(max-width:380px){
-    .height{
+    .height2{
         width: 100%;
     }
     .indi-comment{
         width: 90%;
+    }
+    .comment-sec{
+        margin-top: 40%;
     }
 
 }

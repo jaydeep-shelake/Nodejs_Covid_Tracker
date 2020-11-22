@@ -4,11 +4,21 @@ const searchBtn = document.getElementById('searchBtn');
 const country = document.getElementById('country');
 const rowName = document.getElementById('row-name');
 const coloumnName = document.getElementById('coloumn-name');
-const table = document.querySelector('.table');
+const table = document.getElementById('tableArea');
+const date = document.getElementById('date');
+
+//date
+const days=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
+const months =["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const d = new Date()
+const html = days[d.getDay()];
+const html2 = months[d.getMonth()]
+date.innerHTML+=  d.getDate() +" "+ html2 +',' +html;
+
 searchBtn.addEventListener('click',Search)
 
  async function Search(e){
-    country.innerHTML='LODING...'
+    country.innerHTML='<div class="load">LODING...</div>'
     const serachBar = document.getElementById('searchBar').value;
     console.log(serachBar);
 
@@ -104,8 +114,5 @@ if(serachBar=='India'){
 }
 
 
-// const days=["sunday","monday","tuesday","wednesday","thursday","friday","saturday"];
 
-// const a = new Date()
-// const b = days[a.getDay()];
 // console.log(b);

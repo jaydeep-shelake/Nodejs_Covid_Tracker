@@ -170,10 +170,7 @@
     .iconsText h4{
         margin-top: 4%;
     }
-    .bnnerText #img2{
-        width: 18vw;
-        height: 24px;
-    }
+    
     .feedback h2{
         text-align: center;
     }
@@ -218,7 +215,10 @@
     .burger{
         display: block;
     }
-    
+    .bnnerText a img{
+        width: 135px;
+        height: 40px;
+    }
 
     
 }

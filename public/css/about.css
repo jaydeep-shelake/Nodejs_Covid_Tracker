@@ -28,7 +28,7 @@
 .wrapper .cards .card{
 
     max-width: 300px;
-    height: 216px;
+    height: 320px;
     background: #fff;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.34);
     margin: 30px 10px;
@@ -41,9 +41,6 @@
 }
 .wrapper .cards .card:last-child{
     width: 280px;
-}
-.wrapper .cards .card:hover{
-    height: 320px;
 }
 .card .img{
     position: relative;
@@ -64,9 +61,9 @@
     padding: 10px 15px;
     text-align: center;
     color: #111;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
+    margin-top: -30px;
+    
+
 
 }
 .card .text h2{
@@ -91,27 +88,10 @@
    
 }
 
-.wrapper .cards .card:hover .text{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -30px;
-    transition-delay: 0.3s;
-
-}
-.wrapper .cards .card:hover .bg{
-    background: none;
-}
-.bg{
-    width: 100%;
-    background-color: rgb(253, 123, 123);
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .about-text{
     font-size: 20px;
     padding-bottom: 0.6rem;
+    text-align: center;
 }
  
 @media(max-width:596px){
@@ -121,9 +101,18 @@
 
 }
 @media(max-width:396px){
+    .wrapper .cards{
+        padding: 0;
+        margin: 0;
+    }
     .wrapper .cards .card{
         margin: 0;
         margin-top:40%;
+        padding: 0.6rem;
+        width: 90%;
+    }
+    .wrapper .cards .card .img{
+        top: -50px;
     }
     .wrapper{
         margin-top: 40%;
@@ -132,9 +121,13 @@
     .wrapper .cards396{
         padding: 1rem;
     }
-    .wrapper .cards .card{
-        width: 90%;
-    }
-   
+    
+   .about-text{
+       padding: 0;
+       font-size: 18px;
+   }
+   .wrapper .cards :last-child{
+       margin-bottom: 50px;
+   }
     
 }
