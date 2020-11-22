@@ -14,8 +14,7 @@ indexRoute.post('',(req,res)=>{
     let newFeedback = new feedback(req.body);
     newFeedback.save()
     .then(()=>{
-        
-/*        let testAccount =  nodemailer.createTestAccount();
+             let testAccount =  nodemailer.createTestAccount();
 
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
@@ -34,7 +33,7 @@ indexRoute.post('',(req,res)=>{
     subject: "Greeting from D3 batch RIT ✔", // Subject line
     html: `${output}`, // html body
   });
-*/
+
   
   
   res.render('index',{page_name:'home'});
