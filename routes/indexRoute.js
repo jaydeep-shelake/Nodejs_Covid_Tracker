@@ -1,7 +1,17 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
+const {google} = require('googleapis')
 const feedback = require('../modles/feedback');
 const indexRoute = express.Router();
+
+const CLIENT_ID='836515059620-e8mgv5flipan48tco2u1q2ruamhuuv9s.apps.googleusercontent.com';
+const CLIENT_SECRET='AMSboUAwW8vRD7Z9D9Q8jugt';
+const REDIRECT_URI='https://developers.google.com/oauthplayground';
+const REFRESH_TOKEN='1//04iEaw-1-p7GwCgYIARAAGAQSNwF-L9IrNtEOQTyih2HkjpsSzX1TzWR0h1_ntRZVbVEZJZiAaKMSLf_551fVCd9d-wXtgv5_MbU';
+
+
+const oAuth2Client = new google.auth.OAuth2(CLIENT_ID,CLIENT_SECRET,REDIRECT_URI);
+oAuth2Client.setCredentials({refresh_token:REFRESH_TOKEN});
 
 indexRoute.get('',(req,res)=>{
     res.render('index',{page_name:'home'});
@@ -11,6 +21,8 @@ indexRoute.post('',(req,res)=>{
     const output = `<b>${req.body.name}</b> thankyou for submiting your valueable feedback.You have taken
     a greate initiative towards awaring the spread of covid-19 <br> We appreciate your efforts your feedback pumps us to make app like this.😊😇
     <br><br><br> Please do not reply to this mail`;
+    const accessToken = oAuth2Client.getAccessToken();
+
     let newFeedback = new feedback(req.body);
     newFeedback.save()
     .then(()=>{
@@ -19,10 +31,13 @@ indexRoute.post('',(req,res)=>{
   // create reusable transporter object using the default SMTP transport
   let transporter = nodemailer.createTransport({
     service: "gmail",
-    secure: false, // true for 465, false for other ports
     auth: {
-      user: 'jaydeepshelake2001@gmail.com', // generated ethereal user
-      pass: '26dec@2000', // generated ethereal password
+      type:'OAuth2',
+      user:'jaydeepshelake2001@gmail.com' ,
+      clientId:CLIENT_ID,
+      clientSecret:CLIENT_SECRET,
+      refreshToken:REFRESH_TOKEN,
+      accessToken:accessToken
     },
   });
 
@@ -59,3 +74,6 @@ indexRoute.get('/comments', async(req,res)=>{
 
 
 module.exports=indexRoute;
+
+// refresh token:1//04iEaw-1-p7GwCgYIARAAGAQSNwF-L9IrNtEOQTyih2HkjpsSzX1TzWR0h1_ntRZVbVEZJZiAaKMSLf_551fVCd9d-wXtgv5_MbU
+// acess token:ya29.a0AfH6SMCQNJq7mHJDFsbdM5emEfLg5jFUZiae0x1yXnJcRx5g9XvpNNGrLIgbKMjBE4LIMkGnKbnMJnn_ukicdbzw1Qp2CX3oPUqAndkCxWieF59hsPGQIevQSuHd3V6la5IfYUJtLOfGt8Ic671lkEibtpNmxsw3aNlV804b3N4
