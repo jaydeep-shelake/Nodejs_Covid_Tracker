@@ -18,8 +18,8 @@ indexRoute.get('',(req,res)=>{
 });
 
 indexRoute.post('',(req,res)=>{
-    const output = `<b>${req.body.name}</b> thankyou for submiting your valueable feedback.You have taken
-    a greate initiative towards awaring the spread of covid-19 <br> We appreciate your efforts your feedback pumps us to make app like this.😊😇
+    const output = `<b>${req.body.name}</b> thankyou for submiting your valuable feedback.You have taken
+    a greate initiative towards awaring the spread of covid-19  We appreciate your efforts your feedback pumps us to make app like this.😊😇
     <br><br><br> Please do not reply to this mail`;
     const accessToken = oAuth2Client.getAccessToken();
 

@@ -1,4 +1,5 @@
 const btns = document.querySelectorAll('.all');
+const nav = document.getElementById('navBar');
 const none =document.querySelector('.none');
 const modal = document.querySelector('.modal');
 const feedback = document.getElementById('feedback');
@@ -28,6 +29,7 @@ btns.forEach((btn)=>{
  
 feedback.addEventListener('click',()=>{
     modal.classList.add('fill');
+    nav.style.display="none";
 })
 
 window.addEventListener('click',(e)=>{
@@ -38,6 +40,7 @@ window.addEventListener('click',(e)=>{
 
 cross.addEventListener('click',()=>{
     modal.classList.remove('fill');
+    nav.style.display="flex";
 });
 
 subBtn.addEventListener('click',()=>{

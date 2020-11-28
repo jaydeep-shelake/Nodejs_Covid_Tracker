@@ -219,6 +219,9 @@
         width: 135px;
         height: 40px;
     }
+    .infocards .two .cardimg , .infocards .one .cardimg{
+         right: -35px;
+    }
 
     
 }

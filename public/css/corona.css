@@ -350,6 +350,10 @@ border-radius: 44%;
 }
 .preCard .card .img{
     width: 40%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .preCard .card .img img{
     width: 100%;
@@ -381,7 +385,7 @@ border-radius: 44%;
     width: 100%;
     height: 100%;
     display: flex;
-    top:10%;
+    top:0%;
     position: fixed;
     display: none;
     align-items: center;

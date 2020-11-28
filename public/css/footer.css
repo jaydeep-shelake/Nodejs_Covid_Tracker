@@ -1,0 +1,11 @@
+.dev{
+    color: rgb(141, 139, 139);
+    padding: 1rem;
+}
+@media(max-width:390px){
+    .dev{
+        padding: 0.6rem 0.3rem;
+        font-size: 18px;
+        width: 100%;
+    }
+}
