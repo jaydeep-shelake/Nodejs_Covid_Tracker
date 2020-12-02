@@ -404,7 +404,12 @@ form{
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.679);
     border-radius: 10px;
 }
-
+form .lab-1{
+    align-self: flex-start;
+    padding-top: 5px;
+    margin-bottom: -10px;
+    margin-left: 5px;
+}
 form input{
     width: 90%;
     margin:10px 0 ;
